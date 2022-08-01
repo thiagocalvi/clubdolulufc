@@ -1,0 +1,98 @@
+.header{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.logo img{
+    width: 65px;
+    height: 65px;
+    margin-left: 20%;
+    margin-right: 15px;
+    background-color: #fff;
+}
+
+
+.nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+/* MENU HAMBURGER */
+
+
+
+/* MENU HAMBURGER FIM */
+
+.navLink{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40%;
+}
+
+.link{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+@media only screen and (max-width: 775px) {
+    .header{
+        flex-direction: column;
+        background-color: #fff;
+    }   
+    .logo{
+        flex-direction: column;
+        color: #000;
+    }
+    .logo img{
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+   
+    .navLink{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .link{
+        color: #000;
+    }
+    .link:hover{
+        background-color: #000;
+        color: #fff;
+    
+    }
+}
+
+@media only screen and (max-width:460px){
+    .logo h1{
+        display: none;
+    }
+    .logo img{
+        width: 125px;
+        height: 125px;
+    }
+
+}
